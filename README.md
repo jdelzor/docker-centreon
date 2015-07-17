@@ -62,7 +62,12 @@ Once the container is running, you can reach Centreon under
 	http://host-server.example.com:8100/centreon/
 
 Centreon will start the setup process. It is very opinionated and even requires you to hand over
-your MySQL root user password. Here are some hints for what values are needed:
+your MySQL root user password.
+You can do that this way:
+	linux# docker exec -ti <your container> /bin/bash
+	docker# mysqladmin -u root password yourpassword
+
+Here are some hints for what values are needed:
 
 * Monitoring Engine: nagios
 * Nagios directory: /usr/local/nagios
