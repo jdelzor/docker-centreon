@@ -27,7 +27,7 @@ RUN tar xzf nagios-plugins-2.0.3.tar.gz
 ADD http://downloads.sourceforge.net/project/nagios/ndoutils-1.x/ndoutils-1.5.2/ndoutils-1.5.2.tar.gz?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fnagios%2Ffiles%2Fndoutils-1.x%2Fndoutils-1.5.2%2F&ts=1407940576&use_mirror=kent /root/nagios/
 RUN tar xzf ndoutils-1.5.2.tar.gz
 
-ADD http://download.centreon.com/centreon/centreon-2.5.2.tar.gz /root/nagios/
+ADD https://s3-eu-west-1.amazonaws.com/centreon-download/public/centreon/centreon-2.5.2.tar.gz /root/nagios/
 RUN tar xzf centreon-2.5.2.tar.gz
 RUN chown -R root:root centreon-2.5.2
 
